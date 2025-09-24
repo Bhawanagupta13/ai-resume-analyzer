@@ -1,4 +1,3 @@
-
 import { create } from "zustand";
 
 declare global {
@@ -351,7 +350,7 @@ export const usePuterStore = create<PuterStore>((set, get) => {
                     ],
                 },
             ],
-            { model: "claude-3-7-sonnet" }
+            { model: "gpt-3.5-turbo" }
         ) as Promise<AIResponse | undefined>;
     };
 
