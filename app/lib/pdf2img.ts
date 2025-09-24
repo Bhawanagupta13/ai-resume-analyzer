@@ -20,7 +20,7 @@ async function loadPdfJs(): Promise<any> {
             "pdfjs-dist/build/pdf.worker.min.mjs",
             import.meta.url
         ).toString();
-        pdfjsLib = lib;
+        pdfjsLib = lib;                    
         isLoading = false;
         return lib;
     });
